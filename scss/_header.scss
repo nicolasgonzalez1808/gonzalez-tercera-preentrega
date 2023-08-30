@@ -1,0 +1,25 @@
+body {
+    background-color: $color-fondo
+  }
+  
+  .imagenportada {
+    display: flex;
+    height: 120px;
+    width: 1400px;
+    margin-left: 300px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .fotodeportada {
+    display: flex;
+    height: 500px;
+    width: 1920px;
+  }
+
+  @mixin anclas {
+    text-decoration: none;
+    color: beige;
+    font-size: 50px;
+  }
+
