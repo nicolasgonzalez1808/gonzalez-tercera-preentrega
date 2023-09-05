@@ -1,14 +1,19 @@
+
 body {
   background-color: rgb(255, 255, 255)
 }
 
 
 .imagenportada {
-  height: 120px;
+  /* height: 120px;
   width: 1400px;
   margin-left: 300px;
   justify-content: center;
-  display: flex;
+  display: flex;*/
+  height: 200px;
+  width: 1100px;
+  flex-wrap: wrap;
+  min-height: 200px;
 }
 
 .busqueda1 {
@@ -16,12 +21,10 @@ body {
 }
 
 .imagen2 {
-    margin-left: 280px;
-    width: 800px;
-    height: 500px;
-    margin-left: 500px;
-    justify-content: center;
-
+    width: 600px;
+    height: 400px;
+    margin-left: 350px;
+    margin-right: 200px;
 }
 
 .titulodos {
@@ -41,20 +44,19 @@ body {
   }
 
 h3 {
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-left: 420px;
+  margin-right: 50px;
+  font-size: 30px;
 }
 
 h1 {
   text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.fotopublico {
-  height: 700px;
-  width: 1200px;
-  margin-left: 200px;
-  justify-content: center;
-}
 
 .videos {
   list-style-type: none;
@@ -64,11 +66,16 @@ h1 {
   overflow-x: auto;
   white-space: nowrap;
   justify-content: center;
+  height: 200px;
+  width: 1200px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .videos li {
   margin-right: 10px;
-  justify-content: center;
+  margin-left: 10px;
+  margin-top: 30px;
 }
 
 .arcticfoto { 
@@ -100,24 +107,26 @@ h1 {
 }
 
 .carousel-inner {
-  height: 800px;
-  width: 1300px;
-  margin-left: 65px;
+  height: 500px;
+  width: 800px;
+  margin-left: 200px;
+  margin-right: 100px;
   justify-content: center;
   text-align: center;
   min-width: 200px;
 }
 
 .fotodeportada {
-  height: 500px;
-  width: 1425px;
-  display: flex;
-  justify-content: center;
+  height: 400px;
+  width: 1100px;
+  flex-wrap:nowrap;
 }
 
 h1 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   list-style-type: none;
+  justify-content: center;
+
 }
 
 ul {
@@ -142,27 +151,54 @@ ul {
   justify-content: center;
 }
 
+.fotopublico {
+  height: 500px;
+  width: 800px;
+  margin-top: 40px;
+  margin-left: 220px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+}
+
 .primerparrafo {
-  text-align: center;
+  text-align:center;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
 }
 
 .segundoparrafo {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
 }
 
 .logo {
   width: 10rem;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat;
+  grid-gap: 5px;
+  align-items: center;
+}
+
+
+/* OJOOOOOOOOOOOOOOSADASDASDJKHAKDSHAHSDAJHDKAHSDJHAKHDSAHDAHKDHAKHDKAHDAHDJHAKDSHAHDKJASDKAHSDHAKDHA */
 /* MEDIA / VISTA SMARTPHONES 390x844 */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
+
 
 .imagenportada {
-  height: 40px;
-  width: 80px;
+  height: 140px;
+  width: 600px;
 }
 
 .busqueda1 {
@@ -191,42 +227,47 @@ ul {
   justify-content: center;
 }
 
-  h2 {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h2 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
 h3 {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px  ;
 }
 
 h1 {
   text-align: center;
 }
 
+
 .fotopublico {
-  height: 100px;
-  width: 200px;
-  margin-left: 100px;
-  justify-content: center;
+  height: 150px;
+  width: 350px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
   display: flex;
 }
 
+
 .videos {
-  list-style-type: none;
+  list-style-type: style type;
   padding: 0;
   margin: 0;
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
-  justify-content: center;
 }
 
 .videos li {
   margin-right: 10px;
   justify-content: center;
-  display: flex;
+  display: grid;
 }
 
 .arcticfoto { 
@@ -258,17 +299,18 @@ h1 {
 }
 
 .carousel-inner {
-  height: 160px;
-  width: 400px;
-  margin-left: 10px;
-  justify-content: center;
-  text-align: center;
-  min-width: 30px;
+  height: 150px;
+  width: 350px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* min-width: 30px; */
 }
 
 .fotodeportada {
   height: 160px;
-  width: 400px;
+  width: 390px;
   display: flex;
   justify-content: center;
 }
@@ -308,13 +350,24 @@ ul {
   font-size: 15px;
 }
 
+
 .segundoparrafo {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .logo {
   width: 5rem;
 }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat;
+  grid-gap: 4px;
+  margin-left: 2px;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
 }
